@@ -3,7 +3,9 @@
     package="com.example.android.androidlibrary">
 
     <application>
-        <activity android:name=".AndroidLibraryActivity"></activity>
+        <activity
+            android:name=".AndroidLibraryActivity"
+            android:launchMode="singleTask" />
     </application>
 
 </manifest>
