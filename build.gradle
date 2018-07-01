@@ -4,6 +4,7 @@ buildscript {
     repositories {
         jcenter()
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.google.guava:guava:22.0'
@@ -18,5 +19,7 @@ allprojects {
     repositories {
         jcenter()
         google()
+        mavenCentral()
+
     }
 }
