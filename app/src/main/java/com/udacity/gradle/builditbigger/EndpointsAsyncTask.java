@@ -69,14 +69,7 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context,String>,Void,Stri
         if (progressBar!=null){
             progressBar.setVisibility(View.GONE);
         }
-        startJokeDisplayActivity();
-
-    }
-
-    private void startJokeDisplayActivity() {
-        Intent intent = new Intent(context, AndroidLibraryActivity.class);
-        intent.putExtra("result", result);
-        context.startActivity(intent);
+        context.startActivity(AndroidLibraryActivity.newIntent(context, result));
     }
 }
 
